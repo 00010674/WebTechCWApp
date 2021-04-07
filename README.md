@@ -28,6 +28,12 @@ node app
 
 https://github.com/00010674/WebTechCWApp.git
 
+### Web application on Glitch
+
+Due to Glitch not working till the end of April 7th, I was not able to deploy my app on Glitch until midnight. But Module Leader knows about this situation. So, I hope everything is fine.
+
+https://tested-serious-city.glitch.me/
+
 ### Explanaition to not fully following the project structure recommended in the cw description
 
 I did not add routes folder to store functions and handlers for different pages. The reason for that is that I have only 2 extra functions: 'start writing task1' and 'instructions' Both of them did not need a lot of lines code to be initiated. So in order to decrease the amount of work, I decided to add comments to all the function/handler codes. This way, I specified to which handler a certain function is related to
