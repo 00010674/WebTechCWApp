@@ -4,7 +4,7 @@
 
 To run this web application locally, follow the instructions below
 
-1. Clome this repository
+1. Clone this repository
 ```bash
 git clone https://github.com/00010674/WebTechCWApp.git
 ```
