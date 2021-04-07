@@ -6,7 +6,7 @@ To run this web application locally, follow the instructions below
 
 1. Clome this repository
 ```bash
-git clone {repository link}
+git clone https://github.com/00010674/WebTechCWApp.git
 ```
 
 2. Install dependencies
@@ -26,7 +26,7 @@ node app
 
 ### Web application repository on github
 
-[url to github repo]
+https://github.com/00010674/WebTechCWApp.git
 
 ### Explanaition to not fully following the project structure recommended in the cw description
 
