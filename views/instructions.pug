@@ -1,0 +1,9 @@
+extends layout.pug 
+
+block content 
+    div.container
+        h1.instructionsM Read the instructions below to understand how to use the functions of this web application
+        h2.instructions 1. To enter your task, click the form input and start writing your task. After that click "ADD" button
+        h2.instructions 2. To remove your task, press the "REMOVE" button next to the task you want to delete
+        h2.instructions 3. To point out that you finished a certain task, click on the task name and it will add to the task name erasing line and move the task to the bottom
+        a.startI(href=`/add`) Start writing tasks!

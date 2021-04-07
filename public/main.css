@@ -1,3 +1,8 @@
+:root {
+    font-family: 'Bebas Neue', cursive;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +18,35 @@
     font-size: 4rem;
 }
 
+.introp {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.startp {
+    display: inline-block;
+    padding: 10px ;
+    margin: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: start;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+    background: blue;
+    color: #fff;
+    position: absolute;
+    right: 50%;
+
+    
+    
+}
+
+.startp:hover {
+    opacity: 1;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .form {
 width: 100%;
 display: flex;
@@ -25,6 +59,7 @@ padding: 10px;
 font-size: 1.5rem;
 width: 80%;
 border: 1px solid #ccc;
+font-family: inherit;
 }
 
 .btn {
@@ -34,8 +69,14 @@ border: 1px solid #ccc;
     font-size: 1.5rem;
     width: 18%;
     border: none;
+    opacity: 0.6;
     background: red;
     color: #fff;
+    }
+
+    .btn:hover {
+        opacity: 1;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
 
     .tasks {
@@ -45,9 +86,16 @@ border: 1px solid #ccc;
     }
 
     .task{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 10px;
         font-size: 1.5rem;
         border-bottom: 1px solid #aaa;
+    }
+
+    .task:last-child{
+        border: none;
     }
 
     .task:hover {
@@ -57,18 +105,134 @@ border: 1px solid #ccc;
 
     .error {
         text-align: center;
-        color: red;
+        color:#fff;
         font-size: 1.3rem;
         border: 1px solid #eee;
         border-color: red;
         padding: 10px;
+        margin-bottom: 20px;
+        background-color: red;
     }
 
     .success {
         text-align: center;
-        color: green;
+        color: #fff;
         font-size: 1.3rem;
         border: 1px solid #eee;
         border-color: green;
         padding: 10px;
+        margin-bottom: 20px;
+        background: green;
+    }
+
+    .delete {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    background: rgb(216, 57, 57);
+    color: #fff;
+    opacity: 0.6;
+    }
+
+    .delete:hover {
+        opacity: 1;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    .deleted {
+    text-align: center;
+    padding: 3px 10px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    background: rgb(216, 57, 57);
+    color: #fff;
+    border-color: rgb(216, 57, 57);
+    }
+
+    .done {
+        color: black;
+        text-decoration: line-through;
+
+    }
+
+    .undone {
+        text-decoration: none;
+        color:black;
+
+    }
+
+    .instructions {
+        margin: 10px;
+        font-size: 2rem;
+    }
+
+    .instructionsM {
+        margin-bottom: 50px;
+        text-align: center;
+        color: blue;
+        font-size: 3.4rem;
+    }
+
+    .instructionsP {
+        display: inline-block;
+        padding: 10px ;
+        margin: 50px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-align: start;
+        opacity: 0.6;
+        transition: 0.3s;
+        cursor: pointer;
+        background: blue;
+        color: #fff;
+        position: absolute;
+        right: 30%;
+    }
+
+    .instructionsP:hover {
+        opacity: 1;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    .instructionsH {
+        display: inline-block;
+        padding: 10px ;
+        margin: 50px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-align: start;
+        opacity: 0.6;
+        transition: 0.3s;
+        cursor: pointer;
+        background: blue;
+        color: #fff;
+        position: absolute;
+        right: 43%;
+    }
+
+    .instructionsH:hover {
+        opacity: 1;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    .startI {
+        display: inline-block;
+        padding: 10px ;
+        margin: 10px 50px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-align: start;
+        opacity: 0.6;
+        transition: 0.3s;
+        cursor: pointer;
+        background: blue;
+        color: #fff;
+        position: absolute;
+        right: 41%;
+    }
+
+    .startI:hover {
+        opacity: 1;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }

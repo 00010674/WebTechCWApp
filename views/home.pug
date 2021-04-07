@@ -1,22 +1,32 @@
 extends layout.pug
 
-block content
-
+block content 
   if error
-    p.error Good
+    p.error Enter your task into the form before adding it!
 
-  if succcess
-    p.success Bad
+  if success
+    p.success The task has been succesfully added
+  
+  if removed
+    p.deleted The task has been deleted
 
   form.form(action='/add' method='POST')
-  input.input(type='text' placeholder='Add your task description here...' name='task')
-  button.btn Add  
+    input.input(type='text' placeholder='Add your task description here...' name='task')
+    button.btn Add  
+
 
 
   div.tasks
     if tasks.length
      each task in tasks
-      p.task #{ task.description}
+      p.task
+        if task.done
+          a.done(href=`/${ task.id}/update`) #{ task.description}
+        else
+          a.undone(href=`/${ task.id}/update`) #{ task.description}
+        a.delete(href=`/${ task.id}/delete`) Remove 
     else
-      p.task No Task is available
+      p.task You have not added any task
+
+  a.instructionsH(href=`/instructions`) Instructions
     
